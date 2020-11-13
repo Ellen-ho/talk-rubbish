@@ -1,9 +1,10 @@
 .img-wrapper {
+  /* 工程師圖片高度最小，所以以工程師的圖片為縮放比例去計算外層圖片容器 */
   height: calc(100% * (334/500));
   overflow: hidden;
 }
 
-.img-wrapper>img {
+.img-wrapper > img {
   width: 100%;
 }
 
