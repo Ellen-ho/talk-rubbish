@@ -1,0 +1,12 @@
+.img-wrapper {
+  height: calc(100% * (334/500));
+  overflow: hidden;
+}
+
+.img-wrapper>img {
+  width: 100%;
+}
+
+.form-check-input {
+  margin-top: 13px;
+}

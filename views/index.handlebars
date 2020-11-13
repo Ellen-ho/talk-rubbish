@@ -1,0 +1,48 @@
+<h2 class="text-center mt-4">你想對誰說幹話?</h2>
+<form class="container" method="POST" action="/">
+  <div class="row my-3">
+    <div class="role col-lg-4">
+      <div class="img-wrapper">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg">
+      </div>
+      <div class="form-check text-center">
+        <input class="form-check-input" type="radio" name="role" value="engineer"
+          {{#if (ifEquals options.role "engineer")}} checked {{/if}}>
+        <label class="form-check-label" for="role">
+          工程師
+        </label>
+      </div>
+    </div>
+    <div class="role col-lg-4">
+      <div class="img-wrapper">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg">
+      </div>
+      <div class="form-check text-center">
+        <input class="form-check-input" type="radio" name="role" value="designer"
+          {{#if (ifEquals options.role "designer")}} checked {{/if}}>
+        <label class="form-check-label" for="role">
+          設計師
+        </label>
+      </div>
+    </div>
+    <div class="role col-lg-4">
+      <div class="img-wrapper">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg">
+      </div>
+      <div class="form-check text-center">
+        <input class="form-check-input" type="radio" name="role" value="entrepreneur"
+          {{#if (ifEquals options.role "entrepreneur")}} checked {{/if}}>
+        <label class="form-check-label" for="role">
+          創業家
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class=-"row">
+    <button type="submit" class="btn btn-primary col-lg-2 align-top">
+      <i class="fas fa-comments"></i>
+      產生幹話
+    </button>
+    <textarea id="textarea" class="col-lg-9 align-top" rows="3">{{talk}}</textarea>
+  </div>
+</form>
